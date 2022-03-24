@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar {
+    width: 30%;
+}
+
+#main-doc {
+    width: 70%;
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+      background-color: lightblue;
+    }
+
+    #navbar {
+        display: none;
+    }
+}
