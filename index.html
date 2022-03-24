@@ -14,75 +14,245 @@
       <header>
         <h1>Javascript References</h1>
       </header>
-      <div >
+      <div  >
         <ul>
-          <li><a class="nav-link" href="#JavaScript_Arrays">JavaScript Arrays</a></li>
-          <li><a class="nav-link" href="#JavaScript_Strings">JavaScript Strings</a></li>
-          <li><a class="nav-link" href="#JavaScript_Dates">JavaScript Dates</a></li>
-          <li><a class="nav-link" href="#JavaScript_Maps">JavaScript Maps</a></li>
-          <li><a class="nav-link" href="#JavaScript_Objects">JavaScript Objects</a></li>
-          <li><a class="nav-link" href="#JavaScript_Sets">JavaScript Sets</a></li>
-        
+          <li class="list-style"><a class="nav-link" href="#JavaScript_Arrays">JavaScript Arrays</a></li>
+          <li class="list-style"><a class="nav-link" href="#JavaScript_Strings">JavaScript Strings</a></li>
+          <li class="list-style"><a class="nav-link" href="#JavaScript_Dates">JavaScript Dates</a></li>
+          <li class="list-style"><a class="nav-link" href="#JavaScript_Maps">JavaScript Maps</a></li>
+          <li class="list-style"><a class="nav-link" href="#JavaScript_Objects">JavaScript Objects</a></li>
+          <li class="list-style"><a class="nav-link" href="#JavaScript_Sets">JavaScript Sets</a></li>
         </ul>
 
       </div>
     </nav>
     <main id="main-doc">
       <section class="main-section" id="JavaScript_Arrays">
-        <header> <h3 >JavaScript Arrays</h3> </header>
-        <p> </p>
-        <p> </p>  
-        <code> </code>
-        <code> </code>
+        <header> <h3 >JavaScript Arrays</h3> </header> 
+        <br>
+        <p> If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+          <br> 
+          <b>
+            let car1 = "Saab"; 
+            <br>
+            let car2 = "Volvo";
+            <br>
+            let car3 = "BMW";
+            <br>
+          </b>
+  
+          <br>
+          However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+          <br>
+          The solution is an array!
+          <br>
+          An array can hold many values under a single name, and you can access the values by referring to an index number.
+        </p>
+        <p> 
+          <br>
+          Using the JavaScript Keyword new
+          The following example also creates an Array, and assigns values to it:
+
+          <br><br>
+         <b>Example</b>
+         <br>
+          const cars = new Array("Saab", "Volvo", "BMW");
+        </p>  
+        <b>Example</b>
+        <br>
+        <code> 
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          fruits.shift();
+        </code>
+        <br><br>
+
+        <b>Example</b>
+        <br>
+        <code>
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          let fruit = fruits.shift();
+        </code>
+        <br><br>
       </section>
 
       <section class="main-section" id="JavaScript_Strings">
         <header> <h3 >JavaScript Strings</h3> </header>
-        <p> </p>
-        <p> </p>
-        <code> </code>
-        <code> </code>
+        <p> JavaScript strings are for storing and manipulating text. <br>
+
+          A JavaScript string is zero or more characters written inside quotes. <br> <br>
+          
+          <b>Example</b>
+          let text = "John Doe";
+          <br> <br>
+        </p>
+
+        <p> 
+          <b>String Length</b> <br>
+          To find the length of a string, use the built-in length property:
+          <br> <br>
+
+          <b>Example</b> 
+          let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+          let length = text.length;
+          <br>
+        </p>
+        <br>
+        <code> 
+          let text = "The character \\ is called backslash.";
+        </code>
+        <br> <br>
+        
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>\b - Backspace</li>
+          <li>\f - 	Form Feed</li>
+          <li>\n - New Line</li>
         </ul>
+        <br><br>
+
+        <code> document.getElementById("demo").innerHTML =
+          "Hello Dolly!";
+        </code>
       </section>
+
+
 
       <section class="main-section" id="JavaScript_Dates" >
         <header> <h3 >JavaScript Dates</h3> </header>
-        <p> </p>
-        <p> </p>
-        <code> </code>
-        <code> </code>
+        <p> JavaScript Date Object lets us work with dates:
+
+          <b>Thu Mar 24 2022 11:14:25 GMT+0000 (Greenwich Mean Time)</b>
+          <br>
+          Date objects are created with the new Date() constructor.
+          There are 4 ways to create a new date object:   
+        </p>
+        <br><br>
+
+        <code> const d = new Date(2019, 3, 24, 10, 33, 30);</code> <br> <br>
+
+        <p> new Date(year, month, ...) <br>
+          new Date(year, month, ...) creates a new date object with a specified date and time. <br> <br>
+
+          7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order): <br>
+        </p>
+
+        <code>const d = new Date(2018, 11, 24, 10, 33, 30, 0); </code> <br>
       </section>
+
+
+
 
       <section class="main-section" id="JavaScript_Maps">
         <header > <h3  >JavaScript Maps</h3> </header>
-        <p> </p>
-        <p> </p>
-        <code> </code>
-        <code> </code>
+       
+        <p> 
+          <b>How to Create a Map</b>
+          
+          You can create a JavaScript Map by:
+
+          Passing an Array to new Map() 
+          Create a Map and use Map.set() <br> <br>
+          The new Map() Method
+          You can create a Map by passing an Array to the new Map() constructor:    
+        </p>
+        <br> <br>
+        <code> // Create a Map
+          const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+          ]);
+        </code>
+        <br> <br>
+        <p> 
+          <b>The set() Method</b> <br>
+          You can add elements to a Map with the set() method:
+        </p>
+        <br><br>
+        
+        <code>
+          // Create a Map
+          const fruits = new Map();
+
+          // Set Map Values
+          fruits.set("apples", 500);
+          fruits.set("bananas", 300);
+          fruits.set("oranges", 200);
+        </code>
+        <br><br>
+
+        <ul>
+          <li>Iterable</li>
+          <li>Size</li>
+        </ul>
+        <br>
+
+
+
+
       </section>
 
       <section class="main-section" id="JavaScript_Objects" >
         <header  > <h3>JavaScript Objects</h3> </header>
-        <p> </p>
-        <p> </p>
-        <code> </code>
-        <code> </code>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
+        
+        <p>In real life, a car is an object. <br>
+
+          A car has properties like weight and color, and methods like start and stop: </p>
+          <br><br>
+        <p>
+          All cars have the same properties, but the property values differ from car to car. <br>
+
+          All cars have the same methods, but the methods are performed at different times. <br> <br>
+
+          <b>JavaScript Objects</b>  <br>
+          You have already learned that JavaScript variables are containers for data values. <br>
+
+          This code assigns a simple value (Fiat) to a variable named car:
+        </p>
+        <code>
+          const car = {type:"Fiat", model:"500", color:"white"};
+        </code>
+        <code>
+          let car = "Fiat";
+        </code>
       </section>
+
+
+
 
       <section class="main-section" id="JavaScript_Sets" >
         <header> <h3>JavaScript Sets</h3> </header>
-        <p> </p>
-        <p> </p>
-        <code> </code>
-        <code> </code>
+        <p>
+          How to Create a Set <br>
+          You can create a JavaScript Set by: <br>
+
+          Passing an Array to new Set() <br>
+          Create a new Set and use add() to add values <br>
+          Create a new Set and use add() to add variables <br>
+          <b>The new Set() Method</b> <br>
+          Pass an Array to the new Set() constructor: <br> <br>
+        </p>
+        <code>
+          // Create a Set
+          const letters = new Set(["a","b","c"]);
+        </code>
+
+        <p>
+          <b>The add() Method</b> <br>
+          Example <br> <br>
+          letters.add("d");
+          letters.add("e");
+        </p> <br> <br>
+        
+        <code>
+          letters.add("a"); <br>
+          letters.add("b"); <br>
+          letters.add("c"); <br>
+          letters.add("c"); <br>
+          letters.add("c"); <br>
+          letters.add("c"); <br>
+          letters.add("c"); <br>
+          letters.add("c"); <br>
+        </code>
       </section>
 
     </main>
